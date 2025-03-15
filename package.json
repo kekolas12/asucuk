@@ -6,16 +6,20 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "vue": "^3.5.13"
   },
+  "homepage": "https://kekolas12.github.io/asucuk",
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
-    "vite": "^6.2.2",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.45",
-    "tailwindcss": "^3.4.10"
+    "tailwindcss": "^3.4.10",
+    "vite": "^6.2.2"
   }
 }
